@@ -8,11 +8,3 @@ else
     {
     console.log("Grande")
     }
-
-$(document).ready(function () {
-    $('.openBtn').on('click', function () {
-        $('.modal-body').load('https://kakatorox.github.io/CV/index.html', function () {
-            $('#myModal').modal({ show: true });
-        });
-    });
-});
