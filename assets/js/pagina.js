@@ -1,10 +1,20 @@
-if (screen.width < 800){
-    var cambio = document.getElementById('navmenu');
-    var listo = cambio.getAttribute("aria-orientation");
-    var newValue = "horizontal";
-    cambio.setAttribute("aria-orientation", newValue);
+window.onload = function (event) {
+    if (window.innerWidth < 1200) {
+        $('#navmenu').addClass('d-none');
+        $('#navmenu22').removeClass('d-none');
     }
-else
-    {
-    console.log("Grande")
+    else {
+        $('#navmenu').removeClass('d-none');
+        $('#navmenu22').addClass('d-none');
     }
+};
+window.onresize = function (event) {
+    if (window.innerWidth < 1200) {
+        $('#navmenu').addClass('d-none');
+        $('#navmenu22').removeClass('d-none');
+    }
+    else {
+        $('#navmenu').removeClass('d-none');
+        $('#navmenu22').addClass('d-none');
+    }
+};
